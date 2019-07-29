@@ -105,7 +105,7 @@ var colors = ["#023059", "#035E72", "#36A59A", "#F56469", "#F5A187", "#BB4043", 
    - Updates the HTML class "quote-box" with the output
 ***/
 
-const printQuote () => {
+const printQuote = () => {
   var finalQuote = ''; // Variable to store the final quote to be produced using printRandomQuote();
   randomQuote = getRandomQuote();
   finalQuote += '<p class="quote"> ' + randomQuote.quote + '</p>';
