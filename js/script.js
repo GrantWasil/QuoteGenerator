@@ -77,7 +77,7 @@ var quotes = [
    - returns a random quote from the 'quotes' array using the randomNumber variable
 ***/
 
-function getRandomQuote(){
+const getRandomQuote = () => {
   randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
@@ -91,7 +91,7 @@ var colors = ["#023059", "#035E72", "#36A59A", "#F56469", "#F5A187", "#BB4043", 
   - returns a random background color from the 'colors' array 
  */
 
- function getRandomBackground(){
+ const getRandomBackground = () => {
    randomNumber = Math.floor(Math.random() * colors.length);
    return colors[randomNumber];
  }
@@ -105,7 +105,7 @@ var colors = ["#023059", "#035E72", "#36A59A", "#F56469", "#F5A187", "#BB4043", 
    - Updates the HTML class "quote-box" with the output
 ***/
 
-function printQuote() {
+const printQuote () => {
   var finalQuote = ''; // Variable to store the final quote to be produced using printRandomQuote();
   randomQuote = getRandomQuote();
   finalQuote += '<p class="quote"> ' + randomQuote.quote + '</p>';
